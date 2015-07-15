@@ -22,6 +22,9 @@ var json = {
 // console.info(url.parse(location, true, true));
 
 // console.info(url.format(json));
-console.info(url.resolve('/one/two/three', 'four'));
-console.info(url.resolve('http://example.com/', '/one'));
-console.info(url.resolve('http://example.com/one/two/three', '/one'));
+// console.info(url.resolve('/one/two/three', 'four'));
+// console.info(url.resolve('http://example.com/', '/one'));
+// console.info(url.resolve('http://example.com/one/two/three', '/one'));
+// console.info(url.resolve('http://example.com/one/two/#hash', '/one'));
+// console.info(url.resolve('http://example.com/one/two/', '/one#hash'));
+console.info(url.resolve('http://example.com/one/two/', '/one?name=super#hash'));
