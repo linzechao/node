@@ -5,5 +5,5 @@
 	2、url			// 100%
 	3、querystring	// 100%
 	4、events		// 100%
-	5、http			// 10%
+	5、http			// 4%
 ```
