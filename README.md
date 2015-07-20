@@ -3,16 +3,16 @@
 
 ```js
 	/* 进度*/
-	1、console(控制器) // 100%
-	2、url(URL解析) // 100%
-	3、querystring(格式字符串) // 100%
-	4、events(事件) // 100%
-	5、assert(断言) // 100%
-	6、global(全局对象) // 100%
-	7、timer(定时器) // 100%
-	8、Punycode(编码系统) // 100%
-	-、string_decoder(字符串解码器) // 60%
-	-、http(Http服务) // 4%
+	1、console(控制器 == 冻结) // 100%
+	2、url(URL解析 == 稳定) // 100%
+	3、querystring(格式字符串 == 稳定) // 100%
+	4、events(事件 == 冻结) // 100%
+	5、assert(断言 == 锁定) // 100%
+	6、global(全局对象 == 冇) // 100%
+	7、timer(定时器 == 锁定) // 100%
+	8、Punycode(编码系统 == 不稳定) // 100%
+	-、string_decoder(字符串解码器 == 稳定) // 60%
+	-、http(Http服务 == 稳定) // 4%
 ```
 
 要点
