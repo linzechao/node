@@ -28,15 +28,15 @@ function print() {
 	console.log('print ....');
 }
 
-var timeout = setTimeout(print, 1); // 1毫秒后执行方法
+// var timeout = setTimeout(print, 1); // 1毫秒后执行方法
 // console.log(timeout);
-clearTimeout(timeout); // 直接清除，不执行
+// clearTimeout(timeout); // 直接清除，不执行
 // timeout = null; // 还是会直接执行(标准的配合2条语句清除)
 // console.log(timeout);
 
 var interval = setInterval(print, 1000); // 每隔1000毫秒执行一次
 // console.log(interval);
-clearInterval(interval); // 直接清除，不执行
-// clearTimeout(interval); // 执行一次后清除
+// clearInterval(interval); // 直接清除，不执行
+clearTimeout(interval); // 同上
 // interval = null; // 照常执行
 
