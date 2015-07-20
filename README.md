@@ -10,6 +10,8 @@
 	5、assert(断言) // 100%
 	6、global(全局对象) // 100%
 	7、timer(定时器) // 100%
+	8、Punycode(编码系统) // 0%
+	-、string_decoder(字符串解码器) // 60%
 	-、http(Http服务) // 4%
 ```
 
