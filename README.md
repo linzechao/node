@@ -7,7 +7,8 @@
 	2、url // 100%
 	3、querystring // 100%
 	4、events // 100%
-	5、http // 4%
+	5、assert // 100%
+	6、http // 4%
 ```
 
 要点
