@@ -25,4 +25,8 @@ Study Question
 	3、path模块
 	path.isAbsolute(); // 报错
 
+	4、dns模块
+	reverse、getServers报错
+	// console.log(dns.getServers());
+	// console.log(dns.getServers('220.181.57.217'));
 ```

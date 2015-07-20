@@ -13,6 +13,7 @@ Study Node
 	8、Punycode(编码系统 == 不稳定) // 100%
 	9、modules(模块 == 锁定) // 100%
 	10、path(路径 == 稳定) // 100%
+	11、dns(DNS服务 == 稳定) // 100%
 	-、string_decoder(字符串解码器 == 稳定) // 60%
 	-、http(Http服务 == 稳定) // 4%
 ```
