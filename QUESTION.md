@@ -1,6 +1,13 @@
 Study Question
 ====
 
+要点
+----
+```js
+	node version: v0.10.26
+```
+
+#### Question
 ```js
 	1、http模块
 	server.on('close', function() {
@@ -14,4 +21,8 @@ Study Question
 
 	2、assert模块
 	assert.deepEqual(深度匹配测试)、assert.notDeepEqual(非深度匹配测试) // what?
+
+	3、path模块
+	path.isAbsolute(); // 报错
+
 ```
