@@ -29,4 +29,9 @@ Study Question
 	reverse、getServers报错
 	// console.log(dns.getServers());
 	// console.log(dns.getServers('220.181.57.217'));
+
+	5、util模块
+	// 不起效果
+	util.inspect.styles = 'string';
+	util.inspect.colors = 'blue';
 ```
