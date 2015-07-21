@@ -20,6 +20,7 @@ Study Node
 	15、vm(虚拟机 == 稳定) // 100%
 	16、buffer(缓冲 == 稳定) // 100%
 	17、string_decoder(字符串解码器 == 稳定) // 前提：buffer模块 100%
+	18、repl(命令行 == 稳定) // 100%
 	-、https(HTTPS服务 == 稳定) // 前提：TLS/SSL模块 4%
 	-、domain(域 == 不稳定) //前提：集群模块 4%
 	-、http(Http服务 == 稳定) // 4%
@@ -45,4 +46,10 @@ Study Node
 4、buffer.INSPECT_MAX_BYTES
 ```js
 	使用require引入模块，才可使用
+```
+
+5、在命令行中
+```js
+	输入.exit可退出命令行环境
+	输入.clear可清除命令行文本
 ```

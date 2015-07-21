@@ -63,3 +63,9 @@ Study Question
 ```js
 	// api中decoder冇write和end方法
 ```
+
+9、repl模块
+```js
+	// .clear指令没效果，没清除，也没触发reset方法
+	// _下划线无效
+```
