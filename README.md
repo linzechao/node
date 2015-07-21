@@ -16,6 +16,7 @@ Study Node
 	11、dns(DNS服务 == 稳定) // 100%
 	12、os(操作系统 == 冻结) // 100%
 	13、util(实用工具 == 冻结) // 100%
+	14、samlloc(Smalloc模块 == 实验) // 100%
 	-、string_decoder(字符串解码器 == 稳定) // 60%
 	-、http(Http服务 == 稳定) // 4%
 ```

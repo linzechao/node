@@ -34,4 +34,7 @@ Study Question
 	// 不起效果
 	util.inspect.styles = 'string';
 	util.inspect.colors = 'blue';
+
+	6、smalloc模块
+	smalloc.copyOnto(); // 参数api不详
 ```
