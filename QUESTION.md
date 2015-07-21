@@ -9,30 +9,35 @@ Study Question
 #### Question
 1、http模块
 ```js
+	// 关闭服务器后不执行？
 	server.on('close', function() {
-		console.log('服务器被关闭了....'); // 关闭服务器后不执行？
+		console.log('服务器被关闭了....');
 	});
+	// 每次连接，都会执行2次？
 	server.on('request', function(request, response) {
-		console.log('trigger request event'); // 每次连接，都会执行2次？
+		console.log('trigger request event');
 		// connection事件同上
 	});
 ```
 
 2、assert模块
 ```js
-	assert.deepEqual(深度匹配测试)、assert.notDeepEqual(非深度匹配测试) // what?
+	// what?
+	assert.deepEqual(深度匹配测试);
+	assert.notDeepEqual(非深度匹配测试);
 ```
 
 3、path模块
 ```js
-	path.isAbsolute(); // 报错
+	// 报错
+	path.isAbsolute();
 ```
 
 4、dns模块
 ```js
-	reverse、getServers报错
-	// console.log(dns.getServers());
-	// console.log(dns.getServers('220.181.57.217'));
+	// reverse、getServers报错
+	console.log(dns.getServers());
+	console.log(dns.getServers('220.181.57.217'));
 ```
 
 5、util模块
@@ -44,15 +49,17 @@ Study Question
 
 6、smalloc模块
 ```js
-	smalloc.copyOnto(); // 参数api不详
+	// 参数api不详
+	smalloc.copyOnto();
 ```
 
 7、vm模块
 ```js
-	vm.isContext(sandbox); // 报错
+	// 报错
+	vm.isContext(sandbox);
 ```
 
 8、string_decoder模块
 ```js
-	api中decoder冇write和end方法
+	// api中decoder冇write和end方法
 ```

@@ -20,8 +20,8 @@ Study Node
 	15、vm(虚拟机 == 稳定) // 100%
 	16、buffer(缓冲 == 稳定) // 100%
 	17、string_decoder(字符串解码器 == 稳定) // 前提：buffer模块 100%
-	18、https(HTTPS服务 == 稳定) // 100%
-	-、domain(域 == 不稳定) //前提：集群模块 100%
+	-、https(HTTPS服务 == 稳定) // 前提：TLS/SSL模块 4%
+	-、domain(域 == 不稳定) //前提：集群模块 4%
 	-、http(Http服务 == 稳定) // 4%
 ```
 
@@ -33,7 +33,7 @@ Study Node
 
 2、定时器
 ```js
-	// setTimeout，setInterval会影响前面的unref()方法执行
+	setTimeout，setInterval会影响前面的unref()方法执行
 ```
 
 3、字符串长度
