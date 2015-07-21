@@ -37,4 +37,7 @@ Study Question
 
 	6、smalloc模块
 	smalloc.copyOnto(); // 参数api不详
+
+	7、vm模块
+	vm.isContext(sandbox); // 报错
 ```

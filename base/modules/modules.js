@@ -78,7 +78,7 @@ require('http'); // 优先加载内置HTTP模块
 */
 
 /*
-给module.expors赋值必须立即生效, 不能在回调中执行, 这样不工作	
+给module.exports赋值必须立即生效, 不能在回调中执行, 这样不工作	
 */
 
 // 引用了b.js
