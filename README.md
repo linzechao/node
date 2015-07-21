@@ -18,6 +18,7 @@ Study Node
 	13、util(实用工具 == 冻结) // 100%
 	14、samlloc(Smalloc模块 == 实验) // 100%
 	15、vm(虚拟机 == 稳定) // 100%
+	16、buffer(缓冲 == 稳定) // 100%
 	-、string_decoder(字符串解码器 == 稳定) // 60%
 	-、http(Http服务 == 稳定) // 4%
 ```
@@ -33,4 +34,15 @@ PS
 2、定时器
 ```js
 	// setTimeout，setInterval会影响前面的unref()方法执行
+```
+
+3、字符串长度
+```js
+	当用户在写http响应头Cotent-Length的时候，千万记得一定要用 Buffer.byteLength 方法，
+	不要使用 String.prototype.length
+```
+
+4、buffer.INSPECT_MAX_BYTES
+```js
+	使用require引入模块，才可使用
 ```
