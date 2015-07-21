@@ -1,8 +1,8 @@
 Study Node
-====
+----
 
+#### Progress
 ```js
-	/* 进度*/
 	1、console(控制器 == 冻结) // 100%
 	2、url(URL解析 == 稳定) // 100%
 	3、querystring(格式字符串 == 稳定) // 100%
@@ -20,13 +20,12 @@ Study Node
 	15、vm(虚拟机 == 稳定) // 100%
 	16、buffer(缓冲 == 稳定) // 100%
 	17、string_decoder(字符串解码器 == 稳定) // 前提：buffer模块 100%
+	18、https(HTTPS服务 == 稳定) // 100%
 	-、domain(域 == 不稳定) //前提：集群模块 100%
 	-、http(Http服务 == 稳定) // 4%
 ```
 
-PS
-----
-
+#### PS
 1、可以使用环境变量来配置模块搜索路径
 ```js
 	NODE_PATH=/home/user/lib;/home/lib
