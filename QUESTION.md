@@ -40,4 +40,7 @@ Study Question
 
 	7、vm模块
 	vm.isContext(sandbox); // 报错
+
+	8、string_decoder模块
+	api中decoder冇write和end方法
 ```

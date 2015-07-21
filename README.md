@@ -19,7 +19,8 @@ Study Node
 	14、samlloc(Smalloc模块 == 实验) // 100%
 	15、vm(虚拟机 == 稳定) // 100%
 	16、buffer(缓冲 == 稳定) // 100%
-	-、string_decoder(字符串解码器 == 稳定) // 60%
+	17、string_decoder(字符串解码器 == 稳定) // 前提：buffer模块 100%
+	-、domain(域 == 不稳定) //前提：集群模块 100%
 	-、http(Http服务 == 稳定) // 4%
 ```
 

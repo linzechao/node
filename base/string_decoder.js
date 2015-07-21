@@ -1,8 +1,13 @@
 // 字符串解码器
 var sd = require('string_decoder'); // buffer.toString一个简单接口
 
-var decoder = sd.StringDecoder();
-var euro = new Buffer([0xE2, 0x82, 0xAC]);
+var decoder = new sd.StringDecoder();
+var buf = new Buffer('Super');
 
-console.log(decoder.write(euro));
+// console.log(sd);
+console.log(decoder);
+// console.log(buf);
+// console.log(buf.toString());
+
+// console.log(decoder.write(buf));
 
