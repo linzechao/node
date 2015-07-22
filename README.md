@@ -24,9 +24,20 @@ Study Node
 	19、net(网络 == 稳定) // 100%
 	20、process(进程 == 冇) // 100%
 	21、child_process(子进程 == 稳定) // 100%
-	-、https(HTTPS服务 == 稳定) // 前提：TLS/SSL模块 4%
-	-、domain(域 == 不稳定) //前提：集群模块 4%
+	-、
+	-、
+	-、
+	-、
+	-、
+	-、
+	-、
+	-、
+	-、c(C/C) // 0%
 	-、http(Http服务 == 稳定) // 4%
+	-、tls(TLS/SSL服务 == 稳定) // 0%
+	-、https(HTTPS服务 == 稳定) // 前提：TLS/SSL模块 4%
+	-、cluster(集群模块 == 实验性) // 前提：process模块 0%
+	-、domain(域 == 不稳定) //前提：集群模块 4%
 	总：35
 ```
 
