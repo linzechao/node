@@ -23,9 +23,11 @@ Study Node
 	18、repl(命令行 == 稳定) // 100%
 	19、net(网络 == 稳定) // 100%
 	20、process(进程 == 冇) // 100%
+	21、child_process(子进程 == 稳定) // 100%
 	-、https(HTTPS服务 == 稳定) // 前提：TLS/SSL模块 4%
 	-、domain(域 == 不稳定) //前提：集群模块 4%
 	-、http(Http服务 == 稳定) // 4%
+	总：35
 ```
 
 #### PS

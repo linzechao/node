@@ -1,6 +1,8 @@
 // 进程(全局变量)
 // console.log(process);
 
+var hrtime = process.hrtime();
+
 process.on('exit', function() {
   	// 设置一个延迟执行
   	setTimeout(function() { // 退出后，所有执行代码都停止
@@ -86,5 +88,36 @@ try {
 
 // console.log(process.versions); // 依赖包信息
 
-console.log(process.config); // 配置
+// console.log(process.config); // 返回node.exe配置
+
+console.log(process.pid); // 当前进程的id
+
+// 触发后，退出进程，exit方法都不执行
+// process.kill(process.pid, 'SIGINT'); // 向进程发送一个信号 
+
+// process.title = 'Super';
+// console.log(process.title); // 进程名
+
+// console.log(process.arch); // CPU处理器的架构
+
+// console.log(process.platform); // 程序运行的平台
+
+// console.log(process.memoryUsage()); // {Object} 进程的内存使用情况(byte)
+
+// setTimeout(function() {
+// 	console.log('我是setTimeout方法....'); // 还是在nextTick方法后执行
+// });
+
+// process.nextTick(function() {
+// 	console.log('我是nextTick方法....'); // 退出程序前执行
+// });
+
+// console.log('我在nextTick方法后面....');
+
+// console.log(process.umask(123)); // 掩码
+
+console.log(process.uptime()); // node已运行的秒数
+
+console.log(process.hrtime(hrtime)); // 运行间隔(纳秒...)
+
 
