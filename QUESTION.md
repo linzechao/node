@@ -69,3 +69,13 @@ Study Question
 	// .clear指令没效果，没清除，也没触发reset方法
 	// _下划线无效
 ```
+
+10、child_process模块
+```js
+	// 报错
+	创建spawn、fork报错
+	spawn.kill('SIGHUP');
+	spawn.send({name: 'Super'});
+	fork.kill('SIGHUP');
+	fork..send({name: 'Super'});
+```
