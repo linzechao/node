@@ -3,6 +3,25 @@ var http = require('http');
 
 // 创建服务端
 var server = http.createServer(function(request, response) {
+	// request种种事件与server一样
+	// socket、connect、upgrade、continue、write、end....
+	request.abort(); // 终止一个请求
+	request.setTimeout(1000, function() {
+		console.log('request setTimeout function....');
+	});
+
+	
+
+
+
+
+
+
+
+
+
+	// response
+
 	// response.writeHead(200, {'Content-Type': 'text/plain'});
 	// response.write('Hello, NodeJs');
 
@@ -10,21 +29,30 @@ var server = http.createServer(function(request, response) {
 
 	// 优先于response.statusCode
 	// response.writeHead(400); // 在end方法前面调用
+	response.sendDate = false; // 禁用自动发送date
+	// response.setHeader("Set-Cookie", [" type=ninja", "language=javascript"]);
+	// response.getHeader('content-type'); // 获取头部信息
+	// response.removeHeader('Content-Type'); // 删除头部信息
+	// response.addTrailers({'Content-MD5': "7895bf4b8828b55ceaf47747b4bca667"}); // 尾随header加载完
+
+
 	response.statusCode = 200;
 	response.setHeader("Content-Type", "text/html"); // 设置头信息
-	response.write('Hello, Super!'); // 无论状态码如何，都会返回
+	// response.write('Hello, Super!'); // 无论状态码如何，都会返回
 
-	// response.on('close', function() {  
+	// response.on('close', function() {
 	// 	console.log('response close function');
 	// });
 
-	response.setHeader("Set-Cookie", [" type=ninja", "language=javascript"]);
 	
 	response.setTimeout(1000, function() {
 		console.log('response setTimeout function');
 	});
 
-	response.end();
+	// 也是执行2次？
+	// console.log(response.headersSent); // 只读，是否发送成功
+
+	response.end('send over....');
 });
 
 // 监听连接
@@ -40,14 +68,19 @@ server.on('close', function() {
 	console.log('服务器被关闭了....');
 });
 
+server.on('data', function(data) {
+	console.log(data.toString());
+});
+
 // createClient已经被放弃使用，可使用request代替
 // http.createClient() ==> http.request(); // 创建一个客户端
 
 // 客户端请求时触发
 // 每次请求，都会执行2次？
-// server.on('request', function(request, response) {
-// 	console.log('trigger request event');
-// });
+// 浏览器才会触发
+server.on('request', function(request, response) {
+	console.log('trigger request event');
+});
 
 // 浏览器连接时触发
 // server.on('connection', function(socket) {
@@ -87,6 +120,12 @@ server.maxHeadersCount = 10; // 最大请求数量
 // });
 
 
+// 响应事件
+server.on('response', function(im) {
+	console.log('response function....');
+});
 
-
-
+// 触发一个套接字
+server.on('socket', function(socket) {
+	console.log('socket function....');
+});
