@@ -25,8 +25,8 @@ Study Node
 	20、process(进程 == 冇) // 100%
 	21、child_process(子进程 == 稳定) // 100%
 	22、http(Http服务 == 稳定) // 100%
-	-、tls(TLS/SSL服务 == 稳定) // 0%
-	-、https(HTTPS服务 == 稳定) // 前提：TLS/SSL模块 4%
+	23、tls(TLS/SSL服务 == 稳定) // 100%
+	24、https(HTTPS服务 == 稳定) // 前提：TLS/SSL模块 100%
 	-、dgram(UDP == 稳定) // 0%
 	-、debugger(调试器 == 稳定) // 0%
 	-、fs(文件系统 == 稳定) // 0%
