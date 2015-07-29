@@ -27,7 +27,7 @@ Study Node
 	22、http(Http服务 == 稳定) // 100%
 	23、tls(TLS/SSL服务 == 稳定) // 100%
 	24、https(HTTPS服务 == 稳定) // 前提：TLS/SSL模块 100%
-	-、dgram(UDP == 稳定) // 0%
+	25、dgram(UDP == 稳定) // 100%
 	-、debugger(调试器 == 稳定) // 0%
 	-、fs(文件系统 == 稳定) // 0%
 	-、readline(逐行读取 == 不稳定) // 0%

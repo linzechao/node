@@ -5,7 +5,6 @@ var dgram = require('dgram');
 var server = dgram.createSocket('udp4', function() {
 	console.log('go....');
 });
-
 // console.log(server);
 
 // 收到信息时触发
