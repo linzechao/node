@@ -32,10 +32,16 @@ console.log('successfully deleted /tmp/hello');
 	});
 });*/
 
-fs.ftruncate(1, 2, function(err) {
+// 修改文件
+// fs.ftruncate(fd, len, callback);
+/*fs.truncate('./base/fs/old.txt', 10, function(err) {
 	if (err) {
 		throw err;
 	}
 
-	console.log('ftruncate function....');
-});
+	console.log('truncate function....');
+});*/
+
+
+
+
