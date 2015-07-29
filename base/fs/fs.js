@@ -32,4 +32,10 @@ console.log('successfully deleted /tmp/hello');
 	});
 });*/
 
+fs.ftruncate(1, 2, function(err) {
+	if (err) {
+		throw err;
+	}
 
+	console.log('ftruncate function....');
+});
