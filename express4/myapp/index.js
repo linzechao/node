@@ -62,3 +62,17 @@ app.post('/example/c', [cb0, cb1, cb2]);
 app.all('/example/d', [cb0, cb1], cb2, function(req, res) {
 	res.send('Hello, from D!');
 });
+
+// 减少冗余
+app.route('/book').get(function(req, res) {
+	res.send('Get a random book');
+
+}).post(function(req, res) {
+	res.send('Add a book');
+
+}).put(function(req, res) {
+	res.send('Update the book');
+});
+
+
+
