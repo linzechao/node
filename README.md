@@ -1,7 +1,7 @@
-Study Node
-----
+# node note
+> Fighting
 
-#### Progress
+# Progress
 ```js
 	1、console(控制器 == 冻结) // 100%
 	2、url(URL解析 == 稳定) // 100%
