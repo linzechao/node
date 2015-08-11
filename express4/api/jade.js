@@ -1,5 +1,5 @@
 var express = require('express'),
-	app = express();
+app = express();
 
 app.set('view engine', 'jade'); // 使用视图引擎
 // app.engine('jade', require('jade').__express);
@@ -18,5 +18,10 @@ app.get('/', function(req, res) {
 
 var server = app.listen(3000, function() {
 	// console.log(server.address());
+});
+
+app.use(function(err, req, res, next) {
+	console.log(err.stack);
+	res.status(500).send('Something broke!');
 });
 

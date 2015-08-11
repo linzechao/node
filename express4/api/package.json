@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "consolidate": "^0.13.1",
     "express": "^4.13.3",
     "jade": "^1.11.0"
   }
