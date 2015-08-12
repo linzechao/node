@@ -13,3 +13,4 @@ app.get('/', function(req, res) {
 
 app.listen(4000);
 
+app.use(express.static('public')); // 使用静态路径
