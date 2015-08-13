@@ -15,3 +15,11 @@ app.get('/', function (req, res) {
 	res.json(req.body);
 
 }).listen(4000);
+
+var cookieParser = require('cookie-parser');
+app.use(cookieParser());
+
+app.get('/cookie', function (req, res) {
+	res.json(req.cookie);
+});
+
