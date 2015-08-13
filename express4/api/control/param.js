@@ -23,7 +23,7 @@ app.set('strict routing', true);
 app.set('subdomain offset', 2);
 // 9、是否使用代理
 app.set('trust proxy', 'Varied');
-// 10、视图String or Array
+// 10、视图String or Array ，设置视图路径
 app.set('views', process.cwd() + '/views');
 // 11、开启视图缓存
 app.set('view cache', true);
