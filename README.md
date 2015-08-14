@@ -1,7 +1,7 @@
-# node note
+### node note
 > Fighting
 
-# Progress
+### Progress
 ```js
 	1、console(控制器 == 冻结) // 100%
 	2、url(URL解析 == 稳定) // 100%
@@ -41,7 +41,7 @@
 	总：35
 ```
 
-#### PS
+### PS
 1、可以使用环境变量来配置模块搜索路径
 ```js
 	NODE_PATH=/home/user/lib;/home/lib
