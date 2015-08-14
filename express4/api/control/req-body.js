@@ -22,6 +22,49 @@ app.get('/', function (req, res) {
 	// res.send(req.protocol); // 协议
 	// res.send(req.query); // 查询 json
 	// res.send(req.route); // path, stack, methods, json
+	// res.send(req.stale); // 是否为混乱的
+	// res.send(req.subdomain); // 子域名
+	// res.send(req.xhr); // 是否是ajax请求
+	// ----Methods----
+	// 
+	// Accept: text/html
+	/*req.accepts('html');
+	// => "html"
+
+	// Accept: text/*, application/json
+	req.accepts('html');
+	// => "html"
+	req.accepts('text/html');
+	// => "text/html"
+	req.accepts(['json', 'text']);
+	// => "json"
+	req.accepts('application/json');
+	// => "application/json"
+
+	// Accept: text/*, application/json
+	req.accepts('image/png');
+	req.accepts('png');
+	// => undefined
+
+	// Accept: text/*;q=.5, application/json
+	req.accepts(['html', 'json']);
+	// => "json"*/
+
+	// req.get(field)
+	// With Content-Type: text/html; charset=utf-8
+	/*req.is('html');
+	req.is('text/html');
+	req.is('text/*');
+	// => true
+
+	// When Content-Type is application/json
+	req.is('json');
+	req.is('application/json');
+	req.is('application/*');
+	// => true
+
+	req.is('html');
+	// => false*/
 	
 
 }).listen(4000);
