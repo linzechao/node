@@ -1,6 +1,19 @@
 ### node note
 > Fighting
 
+#### Node细节
+
+```js
+// 模块的检索：从当前目录下的node_modules目录开始查找，一直到根目录下的node_modules目录，若无则报错！
+
+// 引入模块，.node，.json带上后缀可提高性能
+requrie('js_module');
+require('node_file.node');
+require('json_file.json');
+
+// 
+```
+
 ### Progress
 ```js
 	1、console(控制器 == 冻结) // 100%
