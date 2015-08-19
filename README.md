@@ -11,9 +11,9 @@ requrie('js_module');
 require('node_file.node');
 require('json_file.json');
 
-// 
+// 为何PHP只适合小项目：PHP纯同步编程，无多线程
 ```
-
+ 
 ### Progress
 ```js
 	1、console(控制器 == 冻结) // 100%
