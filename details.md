@@ -1,4 +1,4 @@
-#### REPL命令行环境
+#### repl命令行环境
 > 1、下划线_
 ``` js
 // 表示上一个操作符
@@ -33,3 +33,23 @@ _ += 4; // 8
 // 将文件中的函数与变量加载到环境中
 .load ../save.js
 ```
+
+
+#### console控制台
+> 1、重定向标准输出流
+``` js
+// log.js
+console.log('输出一个日志。');
+
+// 保存到info.log文件中，以标准输出方式
+node log.js 1>info.log
+```
+> 2、重定向标准错误输出流
+``` js
+// err.js
+console.error('这是一个报错！');
+
+// 保存到info.log文件中，以标准错误输出流
+node err.js 1>error.log
+```
+
