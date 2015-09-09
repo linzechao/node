@@ -52,4 +52,3 @@ console.error('这是一个报错！');
 // 保存到info.log文件中，以标准错误输出流
 node err.js 1>error.log
 ```
-
