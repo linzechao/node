@@ -1,0 +1,19 @@
+{
+  "name": "accom",
+  "version": "0.0.1",
+  "description": "actual combat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "actual",
+    "combat"
+  ],
+  "author": "Mr. Super",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "~0.9.11",
+    "mime": "~1.2.7"
+  }
+}

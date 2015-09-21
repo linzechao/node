@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>actual combat</title>
+	<link rel="stylesheet" href="css/bt.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="container">
+<h2 class="text-center">welcome to here.</h2>
+<div id="content">
+	<div id="room"></div>
+	<div id="room-list"></div>
+	<div class="mb15" id="message"></div>
+	<form id="send-form form-horizontal">
+		<div class="row">
+			<span class="col-xs-10">
+				<input class="form-control" type="text" id="send-message">
+			</span>
+			<span class="col-xs-2">
+				<input class="btn btn-default" type="submit" id="send-button" value="Send">
+			</span>
+		</div>
+	</form>
+	<div id="help">
+		<strong>Chat commands:</strong>
+		<ul>
+			<li>Change nickname: <code>/nick [username]</code></li>
+			<li>Join/create room: <code>/join [room name]</code></li>
+		</ul>
+	</div>
+</div>
+<script src="js/socket.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/chat_ui.js"></script>
+</body>
+</html>
