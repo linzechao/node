@@ -1,0 +1,3 @@
+安装npm => npm install express jade moment mongoose
+安装bower => npm install bower -g
+安装bootstrap => bower install bootstrap（找不到git路径，再设置临时路径“set path=%path%;F:\Git\bin”）

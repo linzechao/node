@@ -1,0 +1,11 @@
+{
+  "name": "superpackage",
+  "version": "1.0.0",
+  "description": "this my package",
+  "main": "./lib/package.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Super",
+  "license": "Chao"
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图标展示</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <ul></ul>
+
+    <script src="../../../work/version/jquery-1.8.3.js"></script>
+    <script>
+    $(function() {
+        $.ajax({
+            url : "http://sc:8090",
+            success : function(data) {
+                console.log(data);
+            },
+            error : function() {
+
+            }
+        });
+    });
+    </script>
+</body>
+</html>
