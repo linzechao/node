@@ -1,0 +1,5 @@
+node_modules
+bower_components
+web_uploader
+public/img/upload/files
+public/img/upload/tmp

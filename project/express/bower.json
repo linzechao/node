@@ -1,0 +1,34 @@
+{
+  "name": "express",
+  "version": "0.0.1",
+  "homepage": "https://github.com/linzechao/express",
+  "authors": [
+    "Mr. Super <linzechao44@163.com>"
+  ],
+  "description": "express project",
+  "main": "bin/www",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "express",
+    "ex4",
+    "node",
+    "web"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "mustache.js": "~2.1.3",
+    "require": "http://requirejs.org/docs/release/2.1.11/minified/require.js"
+  }
+}

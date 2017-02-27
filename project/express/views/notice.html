@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script data-main="js/notice" src="js/require.js"></script>
+</head>
+<body class="container">
+    <div id="alert" class="alert alert-dismissible hidden" role="alert">
+        <strong></strong>
+    </div>
+    <table id="table-list" class="table table-hover table-bordered table-striped table-condensed text-center">
+        <caption class="f20">公告列表</caption>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>title</th>
+                <th>carousel</th>
+                <th>department</th>
+                <th>date</th>
+                <th>handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#result}}
+            <tr>
+                <!-- 暂时用类个方法-->
+                <td data-id="{{_id}}">{{no}}</td>
+                <td>{{{title}}}</td>
+                <td>
+                    {{#carousel}}
+                    <img src="img/upload/files/{{.}}">
+                    {{/carousel}}
+                </td>
+                <td>{{department}}</td>
+                <td>{{date}}</td>
+                <td>
+                    <a class="btn btn-link btn-xs btn-del" href="javascript:;" tabindex="-1"><span class="glyphicon glyphicon-remove text-danger"></span></a>
+                    <a class="btn btn-link btn-xs" href="javascript:;" tabindex="-1"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
+                    <a class="btn btn-link btn-xs btn-look" data-content="{{content}}" data-toggle="modal" href="#dialog-look" tabindex="-1"><span class="glyphicon glyphicon-eye-open text-success"></span></a>
+                </td>
+            </tr>
+            {{/result}}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="text-right" colspan="6">
+                    <ul class="pagination pagination-sm">
+                        <li class="disabled"><a href="javascript:;" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+
+
+                        {{#info.num}}
+                        <li class="" data-page="{{.}}"><a href="javascript:;">{{.}}</a></li>
+                        {{/info.num}}
+
+                        <li data-page="2"><a href="javascript:;" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+
+
+                    </ul>
+                    <div class="dropup dib">
+                        <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">每页10条 <span class="caret"></span></button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li class="active"><a href="javascript:;">每页10条</a></li>
+                            <li><a href="javascript:;">每页20条</a></li>
+                            <li><a href="javascript:;">每页30条</a></li>
+                            <li><a href="javascript:;">每页50条</a></li>
+                            <li><a href="javascript:;">每页100条</a></li>
+                        </ul>
+                    </div>
+                    <label>总数：<strong class="pr20 text-success">{{info.sum}}</strong></label>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- 发布公告-->
+    <hr>
+    <h4>发布新公告</h4>
+    <form id="form-add" class="form-horizontal">
+        <div class="form-group">
+            <label for="title" class="col-sm-2 control-label">
+                标题：
+            </label>
+            <div class="col-sm-4">
+                <input id="title" class="form-control" name="title" type="text" placeholder="title" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="content" class="col-sm-2 control-label">
+                内容：
+            </label>
+            <div class="col-sm-4">
+                <textarea id="content" class="form-control resize h200" name="content" placeholder="换行表示新段落" required></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="department" class="col-sm-2 control-label">
+                部门：
+            </label>
+            <div class="col-sm-4">
+                <select id="department" class="form-control" name="department">
+                    <option value="人事行政部">人事行政部</option>
+                    <option value="技术服务部">技术服务部</option>
+                    <option value="市场销售部">市场销售部</option>
+                    <option value="仓库物流部">仓库物流部</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-4">
+                <button class="btn btn-default mr10" type="submit">提交</button>
+                <button class="btn btn-default" type="reset">重置</button>
+            </div>
+        </div>
+    </form>
+    
+    <!-- 查看弹框-->
+    <div tabindex="-1" class="modal fade" id="dialog-look">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title"></h3>
+                </div>
+                <div class="modal-body">
+                    <!-- 轮播图-->
+                    <div id="carousel-box" class="carousel slide hidden" data-ride="carousel">
+                        <ol class="carousel-indicators"></ol>
+                        <div class="carousel-inner" role="listbox"></div>
+                        <a class="left carousel-control" href="#carousel-box" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                        <a class="right carousel-control" href="#carousel-box" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                    </div>
+                    <!-- 内容-->
+                    <p></p>
+                    <p class="content f18 lineH20"></p>
+                    <p class="timer f18 text-right"></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" type="reset" data-dismiss="modal">取消</button>
+                    <label class="btn btn-success btn-uploader pr" tabindex="-1" role="button">上传图片</label>
+                    <button class="btn btn-primary" type="submit">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 列表模板-->
+    <template id="tmp-list">
+        &#123;&#123;#result&#125;&#125;
+        <tr>
+            <!-- 暂时用类个方法-->
+            <td data-id="&#123;&#123;_id&#125;&#125;">&#123;&#123;no&#125;&#125;</td>
+            <td>&#123;&#123;&#123;title&#125;&#125;&#125;</td>
+            <td>
+                &#123;&#123;#carousel&#125;&#125;
+                <img src="img/upload/files/&#123;&#123;.&#125;&#125;">
+                &#123;&#123;/carousel&#125;&#125;
+            </td>
+            <td>&#123;&#123;department&#125;&#125;</td>
+            <td>&#123;&#123;date&#125;&#125;</td>
+            <td>
+                <a class="btn btn-link btn-xs btn-del" href="javascript:;" tabindex="-1"><span class="glyphicon glyphicon-remove text-danger"></span></a>
+                <a class="btn btn-link btn-xs" href="javascript:;" tabindex="-1"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
+                <a class="btn btn-link btn-xs btn-look" data-content="&#123;&#123;content&#125;&#125;" data-toggle="modal" href="#dialog-look" tabindex="-1"><span class="glyphicon glyphicon-eye-open text-success"></span></a>
+            </td>
+        </tr>
+        &#123;&#123;/result&#125;&#125;
+    </template>
+</body>
+</html>
