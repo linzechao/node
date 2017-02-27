@@ -1,0 +1,26 @@
+{
+  "name": "socket",
+  "version": "0.0.1",
+  "description": "websocket socket.io",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linzechao/socket.git"
+  },
+  "keywords": [
+    "web",
+    "socket"
+  ],
+  "author": "Mr. Super",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linzechao/socket/issues"
+  },
+  "homepage": "https://github.com/linzechao/socket#readme",
+  "dependencies": {
+    "socket.io": "^1.3.7"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "socket",
+  "version": "0.0.1",
+  "homepage": "https://github.com/linzechao/socket",
+  "authors": [
+    "Mr. Super <linzechao44@163.com>"
+  ],
+  "description": "websocket socket.io",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "web",
+    "socket"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "sockjs-client": "~1.0.3"
+  }
+}

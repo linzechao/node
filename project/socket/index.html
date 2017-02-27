@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket & Socket.io</title>
+</head>
+<body>
+<script src="bower_components/sockjs-client/dist/sockjs-1.0.3.js"></script>
+<script>
+var sock = new SockJS('http://sc');
+
+sock.onopen = function() {
+    console.log('open');
+};
+
+sock.onmessage = function(e) {
+    console.log('news', e.data);
+};
+
+sock.onclose = function() {
+    console.log('close');
+};
+
+sock.send('test');
+sock.close();
+</script>
+</body>
+</html>
