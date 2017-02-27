@@ -1,0 +1,25 @@
+{
+  "name": "generator",
+  "version": "0.0.1",
+  "authors": [
+    "Mr. Super <linzechao44@163.com>"
+  ],
+  "description": "project generator",
+  "main": "",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "generator"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <title>慕课网课程列表</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .maxW200 {max-width: 200px;}
+        td ol {
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <h3>慕课网课程列表</h3>
+    <hr>
+    <table class="table table-hover table-bordered table-striped table-condensed">
+        <thead>
+            <td>ID</td>
+            <td>课程名</td>
+            <td>作者</td>
+            <td>难度</td>
+            <td>时长</td>
+            <td>热度</td>
+            <!-- <td class="maxW200">简介</td> -->
+        </thead>
+        <tbody></tbody>
+    </table>
+    <template>
+        {{#data}}
+        <tr>
+            <td>{{_id}}</td>
+            <td><a href="http://www.imooc.com/view/{{_id}}" target="_blank">{{title}}</a></td>
+            <td><ol>
+                {{#author}}
+                <li>{{name}}: {{job}}</li>
+                {{/author}}
+            </ol></td>
+            <td>{{level}}</td>
+            <td>{{time}}</td>
+            <td>{{number}}</td>
+            <!-- <td class="maxW200">{{info}}</td> -->
+        </tr>
+        {{/data}}
+    </template>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/mustache.js/mustache.min.js"></script>
+    <script>
+        $(function () {
+            $.ajax({
+                url: 'http://sc:4004/course',
+                dataType: 'jsonp',
+                jsonp: 'callback',
+                jsonpCallback: 'callback',
+                success: function (data) {
+                    $('tbody').html(Mustache.render($('template').html(), {data: data}));
+                },
+                error: function (error) {
+                    console.log(error);
+                } 
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "crawler",
+  "version": "0.0.1",
+  "description": "crawler",
+  "main": "crawler.js",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "monk": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/linzechao/crawler.git"
+  },
+  "keywords": [
+    "crawler",
+    "cheerio"
+  ],
+  "author": "Mr. Super",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linzechao/crawler/issues"
+  },
+  "homepage": "https://github.com/linzechao/crawler#readme"
+}

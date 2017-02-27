@@ -1,0 +1,30 @@
+{
+  "name": "crawler",
+  "version": "0.0.1",
+  "homepage": "https://github.com/linzechao/crawler",
+  "authors": [
+    "Mr. Super <linzechao44@163.com>"
+  ],
+  "description": "crawler",
+  "main": "",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "crawler",
+    "cheerio"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "mustache.js": "mustache#~2.1.3"
+  }
+}
