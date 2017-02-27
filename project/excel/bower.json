@@ -1,0 +1,25 @@
+{
+  "name": "excel",
+  "version": "0.0.1",
+  "authors": [
+    "Mr. Super <linzechao44@163.com>"
+  ],
+  "description": "project excel",
+  "main": "",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "excel"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

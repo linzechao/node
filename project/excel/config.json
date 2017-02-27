@@ -1,0 +1,34 @@
+{
+    "host": "localhost",
+    "user": "root",
+    "pwd": "",
+    "db": "sc",
+    "table": "eb_item",
+    "url": "http://www.fasteasybuy.com/",
+    "href": {
+        "US": "http://cgi.ebay.com/",
+        "UK": "http://cgi.ebay.co.uk/",
+        "DE": "http://cgi.ebay.de/",
+        "AU": "http://cgi.ebay.com.au/",
+        
+        "CA-En": "http://cgi.ebay.ca/",
+        "CA-Fr": "http://cgi.cafr.ebay.ca/",
+        "AT": "http://cgi.ebay.at/",
+        "BE-Fr": "http://cgi.befr.ebay.be/",
+        "BE-Nl": "http://cgi.benl.ebay.be/",
+        "FR": "http://cgi.ebay.fr/",
+        "US-Motors": "http://cgi.motors.ebay.com/",
+        "IT": "http://cgi.ebay.it/",
+        "NL": "http://cgi.ebay.nl/",
+        "ES": "http://cgi.ebay.es/",
+        "CH": "http://cgi.ebay.ch/",
+        "HK": "http://cgi.ebay.com.hk/",
+        "IN": "http://cgi.ebay.in/",
+        "IE": "http://cgi.ebay.ie/",
+        "MY": "http://cgi.ebay.com.my/",
+        "PH": "http://cgi.ebay.ph/",
+        "PL": "http://cgi.ebay.pl/",
+        "SG": "http://cgi.ebay.com.sg/",
+        "SE": "http://cgi.ebay.com.se/"
+    }
+}
