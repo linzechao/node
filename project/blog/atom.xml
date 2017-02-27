@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[SuperShow]]></title>
+  <subtitle><![CDATA[Coming, very quiet~]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://mrsuper.tk/"/>
+  <updated>2015-09-06T02:00:35.000Z</updated>
+  <id>http://mrsuper.tk/</id>
+  
+  <author>
+    <name><![CDATA[Mr. Super]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[FE Joint]]></title>
+    <link href="http://mrsuper.tk/2015/09/01/fe-joint/"/>
+    <id>http://mrsuper.tk/2015/09/01/fe-joint/</id>
+    <published>2015-09-01T12:41:01.000Z</published>
+    <updated>2015-09-06T02:00:35.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://images.17173.com/2013/news/2013/02/04/lj0204bz26.jpg" alt="team！"><br>FEJoin —— 前后端对接<br>待续…</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://images.17173.com/2013/news/2013/02/04/lj0204bz26.jpg" alt="team！"><br>FEJoin —— 前后端对接<br>待续…</p>
+]]>
+    </summary>
+    
+      <category term="FE Joint" scheme="http://mrsuper.tk/tags/FE-Joint/"/>
+    
+      <category term="Project" scheme="http://mrsuper.tk/categories/Project/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[About Blog]]></title>
+    <link href="http://mrsuper.tk/2015/08/24/about-blog/"/>
+    <id>http://mrsuper.tk/2015/08/24/about-blog/</id>
+    <published>2015-08-24T13:04:18.000Z</published>
+    <updated>2015-09-06T02:00:37.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://pic.pp3.cn/uploads//allimg/111111/092I4E50-6.jpg" alt="嗨喽，我是Super！"><br>嗨喽，我是Super！<br><br>欢迎访问我的博客，从今天开始这里将是我在互联网中浪荡多年中，一个新的浪点。<br><br>欢迎阅读与订阅。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://pic.pp3.cn/uploads//allimg/111111/092I4E50-6.jpg" alt="嗨喽，我是Super！"><br>嗨喽，我是Super！<br><br>欢迎访问我的博客，从今天开始这里将是我在互联网中浪荡多年中]]>
+    </summary>
+    
+      <category term="about blog" scheme="http://mrsuper.tk/tags/about-blog/"/>
+    
+      <category term="Notice" scheme="http://mrsuper.tk/categories/Notice/"/>
+    
+  </entry>
+  
+</feed>
